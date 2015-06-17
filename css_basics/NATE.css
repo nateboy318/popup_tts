@@ -1,4 +1,4 @@
-/*
+
 div {
     height: 50px;
     width: 100px;
@@ -6,7 +6,7 @@ div {
     border-radius: 5px;
     display: inline-block;
 }
-*/
+
 #one{
     background: red;
 }
@@ -18,12 +18,4 @@ div {
 }
 #four{
     background: green;
-}
-h1 {
-    position: fixed;
-    left: 100px;
-    top: 100px;
-}
-p{
-    
 }
