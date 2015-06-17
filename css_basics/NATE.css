@@ -1,0 +1,29 @@
+/*
+div {
+    height: 50px;
+    width: 100px;
+    border: 2px black solid;
+    border-radius: 5px;
+    display: inline-block;
+}
+*/
+#one{
+    background: red;
+}
+#two{
+    background: blue;
+}
+#three{
+    background: yellow;
+}
+#four{
+    background: green;
+}
+h1 {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+p{
+    
+}

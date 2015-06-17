@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans CondLight'),local('OpenSansCondensedLight'),url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+}
+
+/*basic stuff incoming*/
+*{
+  margin: 0;
+  padding: 0;
+  
+  -webkit-backface-visibility: hidden;
+    
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#container{
+  width: 330px;
+  margin: 25px auto;
+}
+
+
+/*for lack a better headline*/
+h1{
+  color: #333;
+  font-family:Open Sans Condensed;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1:hover{
+  font-size: 2.5em;
+}
+
+h1:hover:before, h1:hover:after{
+  font-style: italic;
+  font-size: 0.5em;
+}
+
+h1:hover:before{
+  content: "some ";
+}
+
+h1:hover:after{
+  content: " by NobodyRocks";
+}
+
+
+/*i'm a button, click me!*/
+button{
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  background-color: #3498db;
+  font-family:Open Sans Condensed;
+  text-decoration: none;
+  font-size: 1.8em;
+  border: 2px #ffffff solid;
+  margin: 10px 0 0 5px;
+  
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/*magic starts here*/
+button:hover{
+  cursor: pointer;
+}
+
+.highlight:hover{
+  background-color: #FFffff;
+  color: #3498db;
+}
+
+.fade:hover{
+  border: 0px;
+  color: #009999;
+  opacity:0;
+}
+
+.boom:hover{
+  color: #009999;
+  border: #009999;
+  opacity: 0;
+  
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+
+.focus:hover{
+  border-width: 20px;
+}
+
+.rotate:hover{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+  background-color: orange;
+   
+}
+
+.knit:hover{
+  height: 0px;
+}
+
+.shrink:hover{
+  -webkit-transform: scale(0.0,0.0);
+  -moz-transform: scale(0.0,0.0);
+  transform: scale(0.0,0.0);
+}
+
+.squezze:hover{
+ -webkit-transform: scale(1.5, 0.0);
+ -moz-transform: scale(1.5, 0.0);
+ transform: scale(1.5, 0.0);
+}
+
+.deform:hover{
+  -webkit-transform: skew(45deg,45deg);
+  -moz-transform: skew(45deg,45deg);
+  transform: skew(45deg,45deg);
+}
+
+
+/*for the sake of responsiveness...*/
+@media (max-width: 330px) {
+  
+  #container{
+    width: 100%;
+  }
+  
+  button{
+    width: 90%;
+    margin: 5% 0 0 5%;
+  }
+
+}
+*{
+  margin: 0; border: 0;
+}
+h1{
+  text-align: center;
+  margin-top: 10%
+}
+p{
+  color: #666;
+}
+#container{
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3%;
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+.accordion label{
+  display:block;
+  background-color: #eeeeee;
+  padding: 10px;
+  color: #424242;
+  text-shadow: 0 0 2px rgba(255,255,255,0.6);
+  cursor: pointer;
+  border-bottom: 1px solid #bdbdbd;
+  border-top: 1px solid #ffffff;
+}
+
+.accordion p{
+  color: #424242;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  border-bottom: 1px solid #bdbdbd;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  text-align: left;
+  background-color: #fff;
+  margin-top: 0px;
+}
+
+#tm:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tm{
+  display: none;
+  position: relative;
+}
+
+#tn:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#tn{
+  display: none;
+  position: relative;
+}
+
+#to:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+input#to{
+  display: none;
+  position: relative;
+}
